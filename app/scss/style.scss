@@ -1,0 +1,81 @@
+@import '_reset';
+@import '_fonts';
+@import '_libs';
+
+$btn-bg: #a3bbc8;
+$bg: #fef7f0;
+$font-color: #334c59;
+$accent: #243f4d;
+$sub-bg: #edf1f4;
+
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-400 {
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%poppins-700 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  @extend %rubik-400;
+  font-size: 16px;
+  color: $font-color;
+  line-height: 30px;
+}
+
+.header {
+  padding: 50px 75px;
+  display: flex;
+  align-items: center;
+  &__nav {
+    margin: 0 auto;
+  }
+  &__menu {
+    display: flex;
+    gap: 35px;  
+  }
+  &__user-nav {
+    display: flex;
+    gap: 18px;
+  }
+}
+
+.user-nav {
+  &__box {
+    display: flex
+  }
+}
+
+
+
+
+@import '_media';
